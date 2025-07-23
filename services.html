@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - IALCH Medical Library</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container header-container">
+            <div class="logo">
+                <h1>IALCH Medical Library</h1>
+                <p>Department of Health - KwaZulu-Natal</p>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="collections.html">Collections</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-toggle">☰ Menu</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="page-header">
+            <h1>Library Services</h1>
+            <p class="subtitle">Supporting healthcare professionals with comprehensive resources</p>
+        </section>
+
+        <section class="services-tabs">
+            <div class="tabs-header">
+                <button class="tab-btn active" data-tab="acquisition">Acquisitions</button>
+                <button class="tab-btn" data-tab="circulation">Circulation</button>
+                <button class="tab-btn" data-tab="reference">Reference</button>
+                <button class="tab-btn" data-tab="internet">Internet Access</button>
+                <button class="tab-btn" data-tab="other">Other Services</button>
+            </div>
+
+            <div class="tab-content active" id="acquisition">
+                <h2>Acquisitions Procedure</h2>
+                <ol class="styled-list">
+                    <li>
+                        <strong>Collaborative Selection</strong>
+                        <p>The selection/acquisition is a joint collaboration between the Clinical and Nursing Heads of Departments and the Library staff.</p>
+                    </li>
+                    <li>
+                        <strong>Liaison Role</strong>
+                        <p>The Library Manager acts as a liaison to each department, meeting periodically to discuss budget allocations and acquisition needs.</p>
+                    </li>
+                    <li>
+                        <strong>Departmental Needs</strong>
+                        <p>Selection is based on departmental or programme needs, with the Library staff ensuring balanced and fair acquisition.</p>
+                    </li>
+                    <li>
+                        <strong>Budget Allocation</strong>
+                        <p>Materials are acquired based on the budget allocated by the Head Office Library in Pietermaritzburg annually.</p>
+                    </li>
+                </ol>
+            </div>
+
+            <div class="tab-content" id="circulation">
+                <h2>Circulation Services</h2>
+                <div class="service-cards">
+                    <div class="service-card">
+                        <h3>Borrowing Privileges</h3>
+                        <p>All full-time IALCH staff may borrow up to four items. Materials must be returned or renewed by the due date.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Loan Periods</h3>
+                        <ul>
+                            <li>General Collection: 14 working days</li>
+                            <li>Reference Materials: Library use only (overnight with permission)</li>
+                            <li>Journals: Library use only</li>
+                        </ul>
+                    </div>
+                    <div class="service-card">
+                        <h3>Renewals</h3>
+                        <p>Items may be renewed once unless requested by another patron. Call the library before the due date to renew.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="reference">
+                <h2>Reference Services</h2>
+                <div class="reference-grid">
+                    <div class="reference-item">
+                        <div class="ref-icon"><i class="fas fa-search"></i></div>
+                        <h3>Research Assistance</h3>
+                        <p>Our librarians can help you find the information you need for patient care, research, or education.</p>
+                    </div>
+                    <div class="reference-item">
+                        <div class="ref-icon"><i class="fas fa-database"></i></div>
+                        <h3>Database Training</h3>
+                        <p>Learn how to effectively search medical databases and our electronic resources.</p>
+                    </div>
+                    <div class="reference-item">
+                        <div class="ref-icon"><i class="fas fa-file-alt"></i></div>
+                        <h3>Literature Searches</h3>
+                        <p>Request comprehensive literature searches on specific medical topics.</p>
+                    </div>
+                    <div class="reference-item">
+                        <div class="ref-icon"><i class="fas fa-share-square"></i></div>
+                        <h3>Document Delivery</h3>
+                        <p>Access to articles not in our collection through interlibrary loan.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="internet">
+                <h2>Internet Access</h2>
+                <div class="rules-list">
+                    <div class="rule-item">
+                        <h3>Time Limits</h3>
+                        <p>1 hour per person when others are waiting. Priority given to medical research.</p>
+                    </div>
+                    <div class="rule-item">
+                        <h3>Workstations</h3>
+                        <p>6 computers available. Some reserved for database access only.</p>
+                    </div>
+                    <div class="rule-item">
+                        <h3>Usage Policy</h3>
+                        <p>Computers are for medical and work-related purposes only.</p>
+                    </div>
+                </div>
+                <div class="computer-availability">
+                    <h3>Current Availability</h3>
+                    <div class="availability-status">
+                        <div class="computer free" data-computer="1">1</div>
+                        <div class="computer free" data-computer="2">2</div>
+                        <div class="computer in-use" data-computer="3">3</div>
+                        <div class="computer free" data-computer="4">4</div>
+                        <div class="computer reserved" data-computer="5">5</div>
+                        <div class="computer in-use" data-computer="6">6</div>
+                    </div>
+                    <p class="availability-legend">
+                        <span class="legend-item"><span class="legend-color free"></span> Available</span>
+                        <span class="legend-item"><span class="legend-color in-use"></span> In Use</span>
+                        <span class="legend-item"><span class="legend-color reserved"></span> Reserved</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="tab-content" id="other">
+                <h2>Other Services</h2>
+                <div class="other-services">
+                    <div class="service-feature">
+                        <h3>Photocopying</h3>
+                        <p>Self-service photocopier with scan-to-email functionality available.</p>
+                    </div>
+                    <div class="service-feature">
+                        <h3>Study Facilities</h3>
+                        <p>30-seat reading area with comfortable study spaces.</p>
+                    </div>
+                    <div class="service-feature">
+                        <h3>Printing</h3>
+                        <p>Limited printing service available for library materials.</p>
+                    </div>
+                    <div class="service-feature">
+                        <h3>Journal Alerts</h3>
+                        <p>Receive tables of contents for your favorite journals.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 800 Vusi Mzimela Road, Cato Manor, 4091</p>
+                    <p><i class="fas fa-envelope"></i> library@ialch.co.za</p>
+                    <p><i class="fas fa-phone"></i> 031 240 2106</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="collections.html">Collections</a></li>
+                        <li><a href="services.html">Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">KZN DOH Portal</a></li>
+                        <li><a href="#">ProQuest Access</a></li>
+                        <li><a href="#">Online Library</a></li>
+                        <li><a href="#">E-Journals</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 IALCH Medical Library. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

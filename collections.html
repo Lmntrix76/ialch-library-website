@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections - IALCH Medical Library</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container header-container">
+            <div class="logo">
+                <h1>IALCH Medical Library</h1>
+                <p>Department of Health - KwaZulu-Natal</p>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="collections.html" class="active">Collections</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-toggle">☰ Menu</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="page-header">
+            <h1>Our Collections</h1>
+            <p class="subtitle">Explore our extensive medical resources</p>
+        </section>
+
+        <section class="search-section">
+            <div class="search-container">
+                <input type="text" id="collection-search" placeholder="Search our collections...">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            <div id="search-results" class="search-results">
+                <!-- Results will be displayed here -->
+            </div>
+        </section>
+
+        <section class="categories-section">
+            <h2>Browse by Subject</h2>
+            <div class="categories-grid">
+                <div class="category-card" data-category="anaesthesia">
+                    <h3>Anaesthesia</h3>
+                    <div class="book-icon"><i class="fas fa-book-medical"></i></div>
+                </div>
+                <div class="category-card" data-category="cardiology">
+                    <h3>Cardiology</h3>
+                    <div class="book-icon"><i class="fas fa-heartbeat"></i></div>
+                </div>
+                <div class="category-card" data-category="nursing">
+                    <h3>Nursing</h3>
+                    <div class="book-icon"><i class="fas fa-user-nurse"></i></div>
+                </div>
+                <div class="category-card" data-category="pharmacology">
+                    <h3>Pharmacology</h3>
+                    <div class="book-icon"><i class="fas fa-pills"></i></div>
+                </div>
+                <div class="category-card" data-category="surgery">
+                    <h3>Surgery</h3>
+                    <div class="book-icon"><i class="fas fa-scalpel"></i></div>
+                </div>
+                <div class="category-card" data-category="pediatrics">
+                    <h3>Pediatrics</h3>
+                    <div class="book-icon"><i class="fas fa-baby"></i></div>
+                </div>
+                <div class="category-card" data-category="neurology">
+                    <h3>Neurology</h3>
+                    <div class="book-icon"><i class="fas fa-brain"></i></div>
+                </div>
+                <div class="category-card" data-category="oncology">
+                    <h3>Oncology</h3>
+                    <div class="book-icon"><i class="fas fa-dna"></i></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="new-arrivals" id="new-arrivals">
+            <h2>New Arrivals</h2>
+            <div class="arrivals-slider">
+                <button class="slider-btn prev"><i class="fas fa-chevron-left"></i></button>
+                <div class="arrivals-container">
+                    <div class="arrivals-track">
+                        <!-- Items will be added dynamically -->
+                    </div>
+                </div>
+                <button class="slider-btn next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </section>
+
+        <section class="book-display">
+            <h2>Featured Book</h2>
+            <div class="book-3d" id="featured-book">
+                <div class="book-cover"></div>
+                <div class="book-spine"></div>
+                <div class="book-pages"></div>
+            </div>
+            <div class="book-controls">
+                <button class="flip-btn btn btn-secondary">Flip Book</button>
+            </div>
+        </section>
+
+        <section class="availability-checker glass-card">
+            <h2>Check Book Availability</h2>
+            <div class="search-box">
+                <input type="text" id="book-isbn" placeholder="Enter ISBN or Title">
+                <button id="check-availability" class="btn btn-primary">Check</button>
+            </div>
+            <div class="availability-result"></div>
+        </section>
+
+        <section class="journals-section" id="journals">
+            <h2>Journal Collections</h2>
+            <div class="journal-tabs">
+                <button class="journal-tab active" data-tab="nursing">Nursing Journals</button>
+                <button class="journal-tab" data-tab="medical">Medical Journals</button>
+                <button class="journal-tab" data-tab="specialty">Specialty Journals</button>
+            </div>
+            <div class="journal-content active" id="nursing">
+                <ul class="journal-list">
+                    <li>American Journal of Nursing</li>
+                    <li>Nursing Times</li>
+                    <li>Journal of Advanced Nursing</li>
+                    <li>British Journal of Nursing</li>
+                    <li>International Journal of Nursing Studies</li>
+                    <li>Journal of Clinical Nursing</li>
+                    <li>Nurse Education Today</li>
+                    <li>Journal of Nursing Scholarship</li>
+                </ul>
+            </div>
+            <div class="journal-content" id="medical">
+                <ul class="journal-list">
+                    <li>The Lancet</li>
+                    <li>New England Journal of Medicine</li>
+                    <li>Journal of the American Medical Association</li>
+                    <li>British Medical Journal</li>
+                    <li>Annals of Internal Medicine</li>
+                    <li>Nature Medicine</li>
+                    <li>PLOS Medicine</li>
+                    <li>Mayo Clinic Proceedings</li>
+                </ul>
+            </div>
+            <div class="journal-content" id="specialty">
+                <ul class="journal-list">
+                    <li>Journal of Cardiac Surgery</li>
+                    <li>Annals of Neurology</li>
+                    <li>Journal of Clinical Oncology</li>
+                    <li>Pediatrics</li>
+                    <li>Obstetrics & Gynecology</li>
+                    <li>Journal of Trauma and Acute Care Surgery</li>
+                    <li>Diabetes Care</li>
+                    <li>Circulation</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 800 Vusi Mzimela Road, Cato Manor, 4091</p>
+                    <p><i class="fas fa-envelope"></i> library@ialch.co.za</p>
+                    <p><i class="fas fa-phone"></i> 031 240 2106</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="collections.html">Collections</a></li>
+                        <li><a href="services.html">Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">KZN DOH Portal</a></li>
+                        <li><a href="#">ProQuest Access</a></li>
+                        <li><a href="#">Online Library</a></li>
+                        <li><a href="#">E-Journals</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 IALCH Medical Library. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

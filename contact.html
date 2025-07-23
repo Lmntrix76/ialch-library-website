@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - IALCH Medical Library</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container header-container">
+            <div class="logo">
+                <h1>IALCH Medical Library</h1>
+                <p>Department of Health - KwaZulu-Natal</p>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="collections.html">Collections</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-toggle">☰ Menu</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="page-header">
+            <h1>Contact Us</h1>
+            <p class="subtitle">We're here to help with your information needs</p>
+        </section>
+
+        <section class="contact-grid">
+            <div class="contact-info">
+                <h2>Library Information</h2>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>Address</h3>
+                        <p>800 Vusi Mzimela Road, Cato Manor, 4091</p>
+                        <p>Private Bag X03, Mayville, 4058</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h3>Phone</h3>
+                        <p>031 240 2106</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <p>library@ialch.co.za</p>
+                    </div>
+                </div>
+                <div class="info-item" id="hours">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h3>Hours</h3>
+                        <div class="hours-container">
+                            <div class="hours-item">
+                                <span>Monday - Friday</span>
+                                <span>8:00 AM - 4:30 PM</span>
+                            </div>
+                            <div class="hours-item">
+                                <span>Saturday</span>
+                                <span>9:00 AM - 1:00 PM</span>
+                            </div>
+                            <div class="hours-item">
+                                <span>Sunday</span>
+                                <span>Closed</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-map">
+                <div class="map-container">
+                    <div class="map-placeholder">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <p>Interactive Map Would Display Here</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-form-section">
+            <h2>Send Us a Message</h2>
+            <form id="library-contact-form" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" class="form-control" required>
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="department">Department (Optional)</label>
+                    <input type="text" id="department" name="department" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <select id="subject" name="subject" class="form-control" required>
+                        <option value="">Select a subject</option>
+                        <option value="general">General Inquiry</option>
+                        <option value="research">Research Assistance</option>
+                        <option value="access">Access Questions</option>
+                        <option value="suggestion">Suggestion</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
+                    <span class="error-message"></span>
+                </div>
+                <button type="submit" class="submit-btn btn btn-primary">Send Message</button>
+            </form>
+            <div id="form-success" class="form-success">
+                <i class="fas fa-check-circle"></i>
+                <p>Thank you for your message! We'll get back to you soon.</p>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How do I register for library services?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>All full-time IALCH staff are automatically eligible for library services. To activate your account, please visit the library with your staff ID to receive your unique barcode number.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How many items can I borrow at once?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Full-time staff members may borrow up to four items at a time. The loan period is 14 working days for most materials.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How do I access e-journals and e-books?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>You can register for online access through the KZN DOH portal. Visit <a href="https://portal.kznhealth.gov.za" target="_blank">portal.kznhealth.gov.za</a>, navigate to the Online Library section, and follow the registration steps.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Can I renew my borrowed items?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, you may renew items once by calling the library before the due date. Further renewals are at the discretion of library staff depending on demand for the item.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How do I recommend a book for purchase?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Recommendations should be sent by email to the Library Manager from your Head of Department. The Library Manager will then include it in the acquisition list for approval.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 800 Vusi Mzimela Road, Cato Manor, 4091</p>
+                    <p><i class="fas fa-envelope"></i> library@ialch.co.za</p>
+                    <p><i class="fas fa-phone"></i> 031 240 2106</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="collections.html">Collections</a></li>
+                        <li><a href="services.html">Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">KZN DOH Portal</a></li>
+                        <li><a href="#">ProQuest Access</a></li>
+                        <li><a href="#">Online Library</a></li>
+                        <li><a href="#">E-Journals</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 IALCH Medical Library. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
